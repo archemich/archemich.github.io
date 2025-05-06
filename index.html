@@ -1,47 +1,154 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Core - облачные решения для бизнеса</title>
+    <title>n1 - облачные решения для бизнеса</title>
 </head>
+
 <body>
-    <header>
+    <header id="header">
         <div class="container">
             <nav>
-                <div class="logo">Core</div>
+                <div class="logo">n1</div>
                 <div class="nav-links">
                     <a href="">Кейсы</a>
                     <a href="">Цены</a>
                     <a href="">Контакты</a>
                 </div>
-                <div class="btn btn-outline">Свяжитесь с нами</div>
             </nav>
         </div>
     </header>
 
+    <section class="hero">
+        <!-- Фоновое изображение с размытием -->
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Фоновое изображение" class="hero-bg">
+        <!-- <img src="bg.jpg" alt="Фоновое изображение" class="hero-bg"> -->
+        
+        <!-- Контент поверх фона -->
+        <div class="hero-content">
+            <h1>Индивидуальные IT-решения для вашего бизнеса</h1>
+            <p>Разрабатываем программное обеспечение, которое решает ваши уникальные задачи и выводит бизнес на новый уровень</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Обсудить проект</a>
+                <a href="#services" class="btn btn-outline">Наши услуги</a>
+            </div>
+        </div>
+    </section>
+
+
     <main>
-        <section class="intro">
+        <section class="what-we-do">
             <div class="container">
-                <div class="row">
-                    <div class="container">
-                        <h1> <span>Индивидуальное решение</span> под задачи бизнеса</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vel facere alias unde sint, sunt nostrum ea deleniti distinctio, iste similique. Eligendi labore laborum iste iusto tempora nulla doloremque enim.</p>
-                        <div class="row">
-                            <div class="btn">Button</div>
-                            <div class="btn btn-outline">Button2</div>
-                        </div>
+                <h2>Что мы умеем?</h2>
+                <div class="services">
+                    <div class="service-card">
+                        <h3>Разработка MVP</h3>
+                        <p>Создаем минимально жизнеспособный продукт (MVP) для быстрого тестирования идеи с минимальными
+                            затратами. Помогаем выйти на рынок быстрее конкурентов и собрать обратную связь от реальных
+                            пользователей.</p>
                     </div>
-                     
-                    <div class="container">
-                        <h3>titlte 2</h3>
-                        <img src="https://images.unsplash.com/photo-1745426431516-7fcf72dc6415?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <div class="service-card">
+                        <h3>Веб-разработка</h3>
+                        <p>Создаем мощные веб-приложения, корпоративные порталы и интернет-магазины с индивидуальной
+                            логикой работы.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Облачные решения</h3>
+                        <p>Разрабатываем и внедряем облачные сервисы для бизнеса: от корпоративных хранилищ до
+                            масштабируемых SaaS-платформ. Гарантируем безопасность, отказоустойчивость и гибкость
+                            инфраструктуры.</p>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="service-not-found">
+                        <div class="container">
+                            <h2>Не нашли подходящее решения?</h2>
+                            <p>Мы поможем подобрать решение для вас</p>
+                        </div>
+                        <div class="container">
+                            <button class="btn">Связаться</button>
+                        </div>
+
                     </div>
                 </div>
             </div>
+
         </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Оставьте заявку</h2>
+                <p>Ответим в течение 2 часов</p>
+
+                <form id="feedback-form" class="feedback-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Телефон">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Опишите ваш проект"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox">
+                            <input type="checkbox" id="agreement" required>
+                            <span>Я согласен на обработку персональных данных</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn">Отправить</button>
+
+                    <div id="form-success" class="success-message">
+                        Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+
+            </div>
+        </footer>
     </main>
+    <script>
+        // Фиксация хедера при скролле
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Плавный скролл для якорных ссылок
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script src="script.js"></script>
 
 </body>
+
+
 </html>
