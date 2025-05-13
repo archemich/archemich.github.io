@@ -1,5 +1,6 @@
 :root {
     --primary: rgba(37, 99, 235);
+    --primary-dark-trans: rgba(26, 35, 126, 0.7);
     --accent: #ff5722;
     --dark: #1E293B;
     --light: #F8FAFC;
@@ -23,7 +24,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 35px;
+    padding: 0 55px;
 }
 
 .row {
@@ -84,10 +85,6 @@ body {
     color: var(--accent);
 }
 
-main {
-    padding: 100px;
-}
-
 header {
     position: fixed;
     width: 100%;
@@ -142,7 +139,8 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(26, 35, 126, 0.7);
+    background: var(--primary-dark-trans);
+    
     z-index: 1;
 }
 
@@ -178,6 +176,19 @@ nav {
     margin-bottom: 30px;
     text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
+
+
+main {
+    padding: 0;
+    margin: 0;
+}
+
+.sect-header {
+    text-align: center;
+    font-size: 42px;
+    margin: 40px auto;
+}
+
 .services {
     display: flex;
     flex-flow: row wrap;
@@ -208,7 +219,7 @@ nav {
     gap: 30px;
     justify-content: space-between;
     margin-top: 55px;
-    background-color: var(--primary);
+    background-color: var(--primary-dark);
     border-radius: 10px;
 }
 
@@ -220,6 +231,7 @@ nav {
 .feedback-form {
     max-width: 600px;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .form-group {
