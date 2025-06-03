@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <title>Neprin - облачные решения для бизнеса</title>
+    <title>Neprin - индивидуальные решения для бизнеса</title>
 </head>
 
 <body>
@@ -19,9 +19,9 @@
             <nav>
                 <div class="logo">Neprin</div>
                 <div class="nav-links">
-                    <a href="">Кейсы</a>
-                    <a href="">Цены</a>
-                    <a href="">Контакты</a>
+                    <!-- <a href="">Кейсы</a> -->
+                    <a href="#what-we-do">Услуги</a>
+                    <a href="#contact">Контакты</a>
                 </div>
             </nav>
         </div>
@@ -39,14 +39,14 @@
                 уровень</p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn btn-primary">Обсудить проект</a>
-                <a href="#services" class="btn btn-outline">Наши услуги</a>
+                <a href="#what-we-do" class="btn btn-outline">Наши услуги</a>
             </div>
         </div>
     </section>
 
 
     <main>
-        <section class="what-we-do">
+        <section id="what-we-do" class="what-we-do">
             <div class="container">
                 <h2 class="sect-header">Что мы умеем?</h2>
                 <div class="services">
@@ -64,8 +64,17 @@
                     <div class="service-card">
                         <h3>Облачные решения</h3>
                         <p>Разрабатываем и внедряем облачные сервисы для бизнеса: от корпоративных хранилищ до
-                            масштабируемых SaaS-платформ. Гарантируем безопасность, отказоустойчивость и гибкость
+                            масштабируемых SaaS-платформ. Обеспечиваем безопасность, отказоустойчивость и гибкость
                             инфраструктуры.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Подключение платежных систем</h3>
+                        <p>Настроим безопасный прием платежей через все популярные системы:
+                             от стандартных эквайрингов до криптовалютных платежей.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Автоматизация бизнес-процессов</h3>
+                        <p>Интеграция со сторонними API. Свяжем вашу систему с любыми сервисами.</p>
                     </div>
                 </div>
             </div>
@@ -123,10 +132,6 @@
                     </div>
 
                     <button type="submit" class="btn">Отправить</button>
-
-                    <div id="form-success" class="success-message">
-                        Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.
-                    </div>
                 </form>
             </div>
         </section>
@@ -136,17 +141,16 @@
                 <div class="footer-content">
                     <div class="footer-col">
                         <div class="logo dark">Neprin</div>
-                        <p>Облачные решения для бизнеса</p>
+                        <p class="slogan"><i>Прозрачные&nbsp;результаты. Доверенный&nbsp;партнер.</i></p>
                     </div>
                     <div class="footer-col">
                         <h3>Контакты</h3>
-                        <p>email@example.com</p>
-                        <p>+7 (123) 456-78-90</p>
+                        <p>archemich@gmail.com</p>
+                        <p>+7 (928) 628-92-88</p>
                     </div>
                     <div class="footer-col">
                         <h3>Соцсети</h3>
-                        <a href="#">Telegram</a>
-                        <a href="#">LinkedIn</a>
+                        <a href="https://t.me/archemich">Telegram</a>
                     </div>
                 </div>
                 <div class="footer-bottom">
@@ -155,8 +159,12 @@
             </div>
         </footer>
     </main>
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
     <script src="script.js"></script>
 
+<div id="toast" class="toast">
+  <div class="toast-content"></div>
+</div>
 </body>
 
 
