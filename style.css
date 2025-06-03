@@ -1,5 +1,6 @@
 :root {
     --primary: rgba(37, 99, 235);
+    --primary-dark: rgb(26, 35, 126);
     --primary-dark-trans: rgba(26, 35, 126, 0.7);
     --accent: #ff5722;
     --dark: #1E293B;
@@ -10,7 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Manrope', sans-serif;
 }
 
 body {
@@ -100,9 +101,14 @@ header.scrolled {
 }
 
 .logo {
-    font-weight: 600;
+    font-weight: 800;
     font-size: 24px;
     color: white;
+    font-family: "Inter", sans-serif ;
+
+}
+.dark {
+    color: var(--dark);
 }
 
 nav {
@@ -212,22 +218,6 @@ main {
     text-align: center;   
 }
 
-.service-not-found {
-    color: white;
-    display: flex;
-    flex-flow: row wrap;
-    gap: 30px;
-    justify-content: space-between;
-    margin-top: 55px;
-    background-color: var(--primary-dark);
-    border-radius: 10px;
-}
-
-.service-not-found button{
-    margin-top: 40px;
-    background-color: var(--accent);
-}
-
 .feedback-form {
     max-width: 600px;
     margin: 0 auto;
@@ -283,4 +273,77 @@ select {
     border-radius: 4px;
     margin-top: 20px;
     display: none;
+}
+.contact {
+    margin-bottom: 30px;
+}
+
+/* Футер */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px 0;
+}
+
+.footer-col {
+    flex: 1 1 200px;
+}
+
+.footer-bottom {
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+
+/* Не нашли нужное решение */
+
+.custom-solution {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark-trans) 100%);
+    color: white;
+    margin: 60px 0;
+}
+
+.custom-solution-card {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.custom-solution-content {
+    flex: 1;
+    padding: 50px;
+}
+
+.custom-solution h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.custom-solution p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.benefits-list {
+    margin-bottom: 40px;
+    list-style-type: none;
+}
+
+.benefits-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.benefits-list li::before {
+    content: "✓ ";
 }

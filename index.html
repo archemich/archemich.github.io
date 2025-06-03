@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>n1 - облачные решения для бизнеса</title>
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <title>Neprin - облачные решения для бизнеса</title>
 </head>
 
 <body>
     <header id="header">
         <div class="container">
             <nav>
-                <div class="logo">n1</div>
+                <div class="logo">Neprin</div>
                 <div class="nav-links">
                     <a href="">Кейсы</a>
                     <a href="">Цены</a>
@@ -26,11 +28,12 @@
         <!-- Фоновое изображение с размытием -->
         <img src="bg.avif" alt="Фоновое изображение" class="hero-bg">
         <!-- <img src="bg.jpg" alt="Фоновое изображение" class="hero-bg"> -->
-        
+
         <!-- Контент поверх фона -->
         <div class="hero-content">
             <h1>Индивидуальные IT-решения для вашего бизнеса</h1>
-            <p>Разрабатываем программное обеспечение, которое решает ваши уникальные задачи и выводит бизнес на новый уровень</p>
+            <p>Разрабатываем программное обеспечение, которое решает ваши уникальные задачи и выводит бизнес на новый
+                уровень</p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn btn-primary">Обсудить проект</a>
                 <a href="#services" class="btn btn-outline">Наши услуги</a>
@@ -62,22 +65,28 @@
                             инфраструктуры.</p>
                     </div>
                 </div>
-
-                <div class="container">
-                    <div class="service-not-found">
-                        <div class="container">
-                            <h2>Не нашли подходящее решения?</h2>
-                            <p>Мы поможем подобрать решение для вас</p>
-                        </div>
-                        <div class="container">
-                            <button class="btn">Связаться</button>
-                        </div>
-
-                    </div>
-                </div>
             </div>
-
         </section>
+
+        <section class="custom-solution">
+    <div class="container">
+        <div class="custom-solution-card">
+            <div class="custom-solution-content">
+                <h2>Не нашли нужное решение?</h2>
+                <p>Расскажите нам о своей задаче, и мы разработаем индивидуальное решение специально для вас</p>
+                <ul class="benefits-list">
+                    <li>Бесплатная консультация</li>
+                    <li>Анализ бизнес-процессов</li>
+                    <li>Подбор оптимальных технологий</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary">Обсудить проект</a>
+            </div>
+            <!-- <div class="custom-solution-image">
+                <img src="solution.svg" alt="Индивидуальные решения" loading="lazy">
+            </div> -->
+        </div>
+    </div>
+</section>
 
         <section id="contact" class="contact">
             <div class="container">
@@ -118,34 +127,31 @@
                 </form>
             </div>
         </section>
-
         <footer>
+            <hr>
             <div class="container">
-
+                <div class="footer-content">
+                    <div class="footer-col">
+                        <div class="logo dark">Neprin</div>
+                        <p>Облачные решения для бизнеса</p>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Контакты</h3>
+                        <p>email@example.com</p>
+                        <p>+7 (123) 456-78-90</p>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Соцсети</h3>
+                        <a href="#">Telegram</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2025 Neprin. Все права защищены</p>
+                </div>
             </div>
         </footer>
     </main>
-    <script>
-        // Фиксация хедера при скролле
-        window.addEventListener('scroll', function() {
-            const header = document.getElementById('header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-        
-        // Плавный скролл для якорных ссылок
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
     <script src="script.js"></script>
 
 </body>
