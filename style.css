@@ -353,8 +353,6 @@ select {
 }
 
 .custom-solution-card {
-    display: flex;
-    align-items: center;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -363,7 +361,6 @@ select {
 }
 
 .custom-solution-content {
-    flex: 1;
     padding: 50px;
 }
 
@@ -458,13 +455,9 @@ select {
     font-size: 32px;
     margin: 30px auto;
   }
-    .custom-solution {
+  .custom-solution {
     padding: 40px 0;
     margin: 30px 0 10px;
-  }
-  
-  .custom-solution-card {
-    flex-direction: column;
   }
   
   .custom-solution-content {
@@ -477,6 +470,10 @@ select {
   
   .custom-solution p {
     font-size: 16px;
+  }
+
+  .benefits-list li {
+    padding-left: 0px;
   }
   .footer-content {
     flex-direction: column;
@@ -492,5 +489,11 @@ select {
     right: 20px;
     max-width: none;
     bottom: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+    .custom-solution-content {
+        text-align: center;
   }
 }
