@@ -1,4 +1,4 @@
-emailjs.init({publicKey: ""});
+// emailjs.init({publicKey: ""});
 
 // Фиксация хедера при скролле
 window.addEventListener('scroll', function () {
@@ -51,15 +51,21 @@ function showToast(message, type = 'default', duration = 3000) {
 // showToast('Форма отправлена!', 'success');
 // showToast('Ошибка отправки', 'error');
 
-document.getElementById("feedback-form").addEventListener('submit', function(event) {
-    event.preventDefault();
-    emailjs.sendForm('service_gfc2esh', "template_b5n82cq", this)
-        .then(function() {
-            showToast('Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.', 'success');
-        }, function(error) {
-            console.error('Cannot send message: ' + error);
-            showToast('Произошла ошибка во время отправки формы. Свяжитесь с нами через почту.', 'error');
-        });
+// document.getElementById("feedback-form").addEventListener('submit', function(event) {
+//     event.preventDefault();
+//     emailjs.sendForm('service_gfc2esh', "template_b5n82cq", this)
+//         .then(function() {
+//             showToast('Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.', 'success');
+//         }, function(error) {
+//             console.error('Cannot send message: ' + error);
+//             showToast('Произошла ошибка во время отправки формы. Свяжитесь с нами через почту.', 'error');
+//         });
     
-});
+// });
 
+
+[...document.getElementsByClassName('get-in-touch')].forEach(element => {
+    element.addEventListener('click', (e) => {
+        showToast("E-Mail: archemich@gmail.com Tel: +7 (928) 628-92-88");
+    });
+}); 
