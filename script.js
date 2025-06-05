@@ -64,8 +64,8 @@ function showToast(message, type = 'default', duration = 3000) {
 // });
 
 
-[...document.getElementsByClassName('get-in-touch')].forEach(element => {
-    element.addEventListener('click', (e) => {
-        showToast("E-Mail: archemich@gmail.com Tel: +7 (928) 628-92-88");
-    });
-}); 
+// [...document.getElementsByClassName('get-in-touch')].forEach(element => {
+//     element.addEventListener('click', (e) => {
+//         showToast("E-Mail: archemich@gmail.com Tel: +7 (928) 628-92-88");
+//     });
+// }); 
